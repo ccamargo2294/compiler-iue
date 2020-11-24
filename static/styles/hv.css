@@ -1,0 +1,155 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #4f5f73;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #cee1f2;
+  color: #4f5f73;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-column {
+  background-color: #4f5f73;
+  max-width: 25%;
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.second-column {
+  background-color: white;
+  width: 70%;
+  padding: 10px 20px 0 20px;
+}
+
+.name {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.hvimage {
+  border-radius: 100%;
+  height: 200px;
+  max-width: auto;
+  border: 5px solid white;
+  align-self: center;
+}
+
+.hvicons {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.hvadditional {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hvdescription {
+  font-size: 1rem;
+}
+
+.title-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.title-icon-content {
+  border: 3px solid #4f5f73;
+  border-radius: 100%;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  border-bottom: 3px solid #4f5f73;
+  margin-left: 5px;
+  flex: 1;
+}
+
+.title h2 {
+  margin: 0;
+}
+
+.content-experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-experience h3 {
+  font-weight: normal;
+}
+.content-experience h3 span {
+  font-weight: bold;
+}
+
+.definition {
+  font-weight: bold;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.education-content > div {
+  width: 45%;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-content > article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skills-content > article > div > ul {
+  list-style-type: none;
+}
+
+.skills-content > article > div > ul > li:first-child {
+  font-weight: bold;
+}

@@ -42,5 +42,22 @@ def compile():
 def home():
     return render_template('index.html')
 
+
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
+@app.route('/hv')
+def hv():
+    return render_template('hv.html')
+
+@app.route('/terminos')
+def terminos():
+    return render_template('terminos.html')
+
+@app.route('/alphabet-soup')
+def alphabet_soup():
+    return render_template('alphabet-soup.html')
+
 if __name__ == '__main__':
     app.run()

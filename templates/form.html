@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Form</title>
+    <link rel="stylesheet" href="/static/styles/form.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a href="/hv">Resume</a>
+            <a href="/alphabet-soup">Alphabet Soup</a>
+            <a href="/terminos">HTML Tags definition</a>
+            <a class="active" href="/form">Q&A Form</a>
+            <a href="/">Compiler</a>
+        </div>
+    </header>
+    <main>
+        <form>
+            <div>
+                <h3>What does CSS stand for?</h3>
+                <div class="response">
+                    <label><input checked type="radio" name="questionone" />Creative Style Sheet</label>
+                    <label><input type="radio" name="questionone" />Cascading Style Sheet</label>
+                    <label><input type="radio" name="questionone" />Computer Style Sheet</label>
+                    <label><input type="radio" name="questionone" />Colorful Style Sheet</label>
+                </div>
+            </div>
+
+            <div>
+                <h3>
+                    What are the corrects HTML to use style sheet?
+                </h3>
+                <div class="response">
+                    <label><input type="checkbox" name="questiontwo" />&lt;link rel="stylesheet" type="text/css"
+                        href="mystyle.css"&gt;</label>
+                    <label><input type="checkbox" name="questiontwo" /> &lt;style src="mystyle.css"&gt;</label>
+                    <label><input type="checkbox" name="questiontwo" /> &lt;style src="mystyle.css"&gt;</label>
+                    <label><input type="checkbox" name="questiontwo" />&lt;style&gt;&lt;/style&gt;</label>
+                </div>
+            </div>
+
+            <div>
+                <h3>Does html mean hyper text markup language?</h3>
+                <div class="response">
+                    <label><input checked type="radio" name="questionthree" />True</label>
+                    <label><input type="radio" name="questionthree" /> Flase</label>
+                </div>
+            </div>
+
+            <div>
+                <h3>Who is making the Web standards?</h3>
+                <div class="response">
+                    <label><input checked type="radio" name="questionfour" />The world wide web Consortium</label>
+                    <label><input type="radio" name="questionfour" />Google</label>
+                    <label><input type="radio" name="questionfour" />Microsoft</label>
+                    <label><input type="radio" name="questionfour" />Mozilla</label>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
