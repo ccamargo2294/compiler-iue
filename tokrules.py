@@ -25,7 +25,7 @@ tokens = [
     'RBRACKET',
     'LBRACE',
     'RBRACE',
-    'EQUAL',
+    'ASSIGN',
     'COMMA',
     'SEMICOLON',
     "SYSTEM",
@@ -40,7 +40,8 @@ tokens = [
     "INTPARSE",
     "COMMENT",
     'VARIABLE',
-    'STRING'
+    'STRING',
+    'VAR'
  ] + list(reserved.values())
 
 t_PLUS    = r'\+'
@@ -53,9 +54,13 @@ t_LBRACKET  = r'\['
 t_RBRACKET  = r'\]'
 t_LBRACE  = r'\{'
 t_RBRACE  = r'\}'
-t_EQUAL = r'\='
+t_ASSIGN = r'\='
 t_COMMA = r'\,'
 t_SEMICOLON = r'\;'
+
+def t_VAR(t):
+    r'var'
+    return t
 
 def t_SYSTEM(t):
     r'system'
